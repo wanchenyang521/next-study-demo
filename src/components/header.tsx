@@ -13,7 +13,7 @@ const Header = () => {
     ];
 
     return (
-        <div className="absolute w-full bg">
+        <div className="absolute w-full z-10">
             <div className=" mx-auto flex justify-between container text-white p-8">
                 <Link className="text-3xl font-bold" href='/'>Home</Link>
                 <div className="flex gap-4 text-2xl font-bold">

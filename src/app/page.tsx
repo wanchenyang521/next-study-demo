@@ -1,11 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Hero from "@/components/Hero";
 
 const Page = () => {
     return (
-        <div className="bg-amber-50">
-            Hello
-        </div>
+        <Hero imgUrl="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" content="Home"></Hero>
     );
 };
 

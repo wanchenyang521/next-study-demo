@@ -1,10 +1,9 @@
 import React from 'react';
+import Hero from "@/components/Hero";
 
 const Page = () => {
     return (
-        <div>
-            performance
-        </div>
+        <Hero imgUrl="https://images.unsplash.com/photo-1518837695005-2083093ee35b" content="performance"></Hero>
     );
 };
 
