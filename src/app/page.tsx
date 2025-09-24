@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const Page = () => {
     return (
-        <div>
-Hello
+        <div className="bg-amber-50">
+            Hello
         </div>
     );
 };
