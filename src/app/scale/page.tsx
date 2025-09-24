@@ -1,5 +1,8 @@
 import React from 'react';
 import Hero from "@/components/Hero";
+export const metadata: Metadata = {
+    title: 'scale',
+}
 
 const Page = () => {
     return (
