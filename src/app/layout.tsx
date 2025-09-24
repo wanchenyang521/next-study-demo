@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from '@/components/header'
+import ConditionalHeader from '@/components/ConditionalHeader'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-red-200 w-full h-full">
-      <Header></Header>
+      <ConditionalHeader />
       {children}
       </body>
     </html>
