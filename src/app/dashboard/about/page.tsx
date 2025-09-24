@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Page = () => {
+const Page = props => {
     return (
         <div>
-Hello
+            About Content
         </div>
     );
 };

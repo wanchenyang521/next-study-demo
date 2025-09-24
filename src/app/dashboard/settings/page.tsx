@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Page = () => {
     return (
         <div>
-Hello
+            settings content
         </div>
     );
 };
