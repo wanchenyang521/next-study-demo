@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-
+import { Button, Flex } from 'antd';
 interface HeroProps {
     imgUrl: string;
     content: string;
@@ -9,6 +9,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({imgUrl, content}) => {
     return (
         <div className="relative h-screen w-full">
+
             <div className="absolute inset-0">
                 <Image
                     src={imgUrl}
@@ -21,6 +22,7 @@ const Hero: React.FC<HeroProps> = ({imgUrl, content}) => {
             </div>
             <div className="relative text-white flex items-center justify-center h-full">
                 <h1 className="text-4xl font-bold">{content}</h1>
+                <Button>Default Button</Button>
             </div>
         </div>
     );
