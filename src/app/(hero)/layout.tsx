@@ -15,45 +15,44 @@ export const metadata: Metadata = {
 
 export default function HeroLayout({
   children,
-  team,
-  analytics
+  modal
 }: Readonly<{
   children: React.ReactNode;
-  team: React.ReactNode;
-  analytics: React.ReactNode;
+    modal: React.ReactNode;
 }>) {
   return (
     <div className="min-h-screen bg-gray-50">
       {/*<Header />*/}
-        <Link href='/'>Home</Link>
-        <Link href='/visitors'>visitors</Link>
+      {/*  <Link href='/'>Home</Link>*/}
+      {/*  <Link href='/visitors'>visitors</Link>*/}
       {/* 主要内容区域 */}
       <main className="relative">
 
 
         {/* 并行路由内容区域 */}
-        <div className="container mx-auto px-4 py-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Team 内容区域 */}
-            <div className="team-section">
-              <div className="bg-white rounded-lg shadow-sm border p-6">
-                <h2 className="text-2xl font-bold mb-4 text-gray-800">团队管理</h2>
-                {team}
-              </div>
-            </div>
+        {/*<div className="container mx-auto px-4 py-8">*/}
+        {/*  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">*/}
+        {/*    /!* Team 内容区域 *!/*/}
+        {/*    <div className="team-section">*/}
+        {/*      <div className="bg-white rounded-lg shadow-sm border p-6">*/}
+        {/*        <h2 className="text-2xl font-bold mb-4 text-gray-800">团队管理</h2>*/}
+        {/*        {team}*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
 
-            {/* Analytics 内容区域 */}
-            <div className="analytics-section">
-              <div className="bg-white rounded-lg shadow-sm border p-6">
-                <h2 className="text-2xl font-bold mb-4 text-gray-800">数据分析</h2>
-                {analytics}
-              </div>
-            </div>
-          </div>
-        </div>
+        {/*    /!* Analytics 内容区域 *!/*/}
+        {/*    <div className="analytics-section">*/}
+        {/*      <div className="bg-white rounded-lg shadow-sm border p-6">*/}
+        {/*        <h2 className="text-2xl font-bold mb-4 text-gray-800">数据分析</h2>*/}
+        {/*        {analytics}*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
           {/* Hero 主内容 */}
       <section className="hero-section">
           {children}
+          {modal}
       </section>
       </main>
     </div>
